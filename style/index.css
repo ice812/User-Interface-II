@@ -1,1 +1,200 @@
 /* Add CSS styling here */
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header {
+    background: #02020A;
+    height: 150px;
+    padding: 20px;  
+}
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 3rem;
+    color: #B497D6;
+}
+
+nav {
+    display: flex;
+    margin: 20px 40px;
+}
+
+nav button:nth-child(1) {
+background: #BFACAA;
+}
+
+nav button:nth-child(2) {
+    background: #05204A
+}
+
+nav button:nth-child(3) {
+    background: #B497D6;
+}
+
+nav button:nth-child(4) {
+    background: #848bf0;
+}
+
+nav button {
+    background: coral;
+    height: 40px;
+    width: 100px;
+    border: 1px solid black;
+} 
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: #BFACAA;
+   
+}
+
+main img {
+    height: 500px;
+    width: 700px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+main article {
+    text-align: left;
+    width: 40%;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+h2 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1.5rem;
+    margin: 25px 0;
+    color: #05204A;
+}
+
+main article button {
+    background: #848bf0;
+    height: 40px;
+    width: 150px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+
+p {
+    margin: 25px 0;
+    padding: 5px 0;
+}
+
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0;
+    background: #BFACAA;
+}
+
+section article {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+section article p {
+    text-align: center;
+}
+
+footer {
+    background: #02020A;
+    text-align: center;
+    height: 200px;
+    padding: 20px 0;
+}
+
+h3 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1.5rem;
+    margin: 25px 0;
+    color: #B497D6;
+}
+
+footer button {
+    background:#B497D6;
+    height: 40px;
+    width: 150px;
+    border: 1px solid black;
+}
+
+/* Start max 800 */
+@media screen and (max-width: 800px) {
+    .container { 
+      width: 100%;
+      margin: 0 0;
+    }
+
+    main img {
+        padding-bottom: 20px;
+        margin-top: 0px;
+    } 
+
+    section article {
+        padding: 1rem;
+    }
+
+}
+
+/* Start max 625 */
+@media screen and (max-width: 625px) {
+    section article {
+        width:33%;
+        padding: 1rem;
+    }
+
+}
+
+/* Start max 500 */
+@media screen and (max-width: 500px)
+    section article {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main article h2 {
+        display: none;  
+    }
+
+    main img {
+        width: 95%;
+        display: flex;
+    }
+
+    main article {
+        width: 80%;
+    }    
+
+}
